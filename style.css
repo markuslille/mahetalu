@@ -152,13 +152,6 @@ header {
   font-weight: lighter;
 }
 
-/* .bg-img {
-  background-image: url("/images/IMG_7927.jpeg");
-  width: 100vw;
-  height: 100vh;
-  opacity: 60%;
-} */
-
 /* MAIN CONTENT */
 
 .divider {
@@ -176,37 +169,56 @@ header {
   height: 40vh;
 }
 
-.intro-container {
+.main-content {
   position: relative;
   display: flex;
   justify-content: center;
+  background-image: #000000;
   align-items: center;
   width: 100vw;
   height: 90vh;
-  background-color: black;
   border-left: 30px solid #ffffff;
   border-right: 50px solid #ffffff;
-  /* background-image: url("images/IMG_7927.jpeg"); */
 }
 
-.intro-container::before {
-  content: "";
+/* .bg-img {
+  position: absolute;
+  background-image: url("images/IMG_7927.jpeg");
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+} */
+
+.intro-container::after {
+  content: " ";
   width: 100%;
   height: 100%;
   position: absolute;
+  background-color: #000000;
   opacity: 90%;
   z-index: 1;
   background-image: url("images/IMG_7931.JPG");
-  background-position: center top;
   background-size: cover;
-  transition: opacity 1s;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.intro-container > h1 {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  font-family: "Big Shoulders Display", cursive;
 }
 
 .intro-container > * {
   z-index: 100;
 }
 
-.intro {
+.intro-first {
   height: 40vh;
   position: absolute;
   right: 0;
@@ -220,31 +232,34 @@ header {
   width: 40vw;
 }
 
-.intro h3 {
+.intro-first,
+.intro-second h3 {
   align-self: start;
   font-family: "Big Shoulders Display", cursive;
   color: black;
   display: block;
 }
 
-.intro p {
+.intro-first > p,
+.intro-second > p {
   /* padding-left: 40px; */
   font-family: "Big Shoulders Display", cursive;
   color: black;
   width: 30vw;
 }
 
-.goals-container {
-  position: relative;
+.intro-second {
+  height: 40vh;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  background-color: #ffffff;
+  padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 90vh;
-  background-color: black;
-  border-left: 30px solid #ffffff;
-  border-right: 50px solid #ffffff;
-  /* background-image: url("images/IMG_7927.jpeg"); */
+  width: 40vw;
 }
 
 .goals-container::before {
@@ -255,9 +270,79 @@ header {
   opacity: 90%;
   z-index: 1;
   background-image: url("images/DSC_0915.JPG");
+  background-position: center top 0%;
+  background-size: cover;
+  transition: opacity 1s;
+}
+
+.goals-container {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.goals-container > * {
+  z-index: 100;
+}
+
+.goals {
+  display: flex;
+  padding: 5px;
+  position: absolute;
+}
+
+.goals-container > h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: #000000;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.goal > * {
+  font-family: "Big Shoulders Display", cursive;
+  text-align: center;
+}
+
+.goal {
+  padding: 15px;
+  width: 20vw;
+  margin: 50px;
+  height: 50vh;
+  background-color: #ffffff;
+}
+
+.first-goal {
+  bottom: 35%;
+  left: 100%;
+  position: absolute;
+  width: 20vw;
+}
+
+.second-goal {
+  position: absolute;
+  right: 100%;
+  top: 35%;
+  width: 20vw;
+}
+
+.coop-container {
+}
+
+.coop-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 90%;
+  z-index: 1;
+  background-image: url("images/IMG_0315.JPG");
   background-position: center top;
   background-size: cover;
   transition: opacity 1s;
+}
+
+.coop-container > * {
+  z-index: 100;
 }
 
 /* CONTACT */

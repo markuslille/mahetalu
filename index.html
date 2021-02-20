@@ -36,7 +36,7 @@
         <video id="landingVideo" playsinline autoplay muted loop>
             <source src="/images/mahetalu-vid.mp4" type="video/mp4">
         </video> 
-        <div class="bg-img"></div>
+        <!-- <div class="bg-img"></div> -->
         <h1 class="animate__animated animate__zoomIn animate__slow">Kasvatatud loodussõbralikult,<br>ilma kemikaalideta!</h1>
         <!-- <h1 class="animate__animated animate__zoomIn animate__slow">Kasvatatud loodussõbralikult,<br>ilma kemikaalideta!</h1> -->
     </div>
@@ -52,8 +52,30 @@
 
 <div class="divider"></div>
 
-<section class="intro-container">
-    <div class="intro animate__animated animate__slow" data-scroll>
+<section class="main-content intro-container">
+    <div class="bg-img"></div>
+    <h1>Tere tulemast!</h1>
+    <div class="intro-first animate__animated animate__slow" data-scroll>
+        <h3>Meie mahetoodang</h3>
+        <p>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate, corrupti. Lorem 
+            ipsum dolor sit amet consectetur adipisicing 
+            elit. Temporibus, aut!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
+            <br>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate, corrupti. Lorem 
+            ipsum dolor sit amet consectetur adipisicing 
+            elit. Temporibus, aut!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
+        </p>
+    </div>
+    <div class="intro-second animate__animated animate__slow" data-scroll>
         <h3>Meie mahetoodang</h3>
         <p>
             <br>
@@ -85,17 +107,91 @@
 
 <div class="divider"></div>
 
-<section class="goals-container">
-    <div class="goals-first"></div>
-    <div class="goals-second"></div>
-    <div class="goals-third"></div>
+<section class="main-content goals-container">
+            <h1>Meie põhimõtted</h1>
+    <div class="goals">
+        <div class="goal first-goal animate__animated animate__slow" data-scroll>
+            <h3>Header</h3>
+            <p>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate, corrupti. Lorem 
+            ipsum dolor sit amet consectetur adipisicing 
+            elit. Temporibus, aut!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
+            <br>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate, corrupti. Lorem 
+            ipsum dolor sit amet consectetur adipisicing 
+            elit. Temporibus, aut!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
+        </p>
+        </div>
+        <div class="goal second-goal animate__animated animate__slow" data-scroll>
+            <h3>Header</h3>
+            <p>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate, corrupti. Lorem 
+            ipsum dolor sit amet consectetur adipisicing 
+            elit. Temporibus, aut!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
+            <br>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate, corrupti. Lorem 
+            ipsum dolor sit amet consectetur adipisicing 
+            elit. Temporibus, aut!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
+        </p>
+        </div>
+        <div class="goal third-goal animate__animated" data-scroll>
+            <h3>Header</h3>
+            <p>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate, corrupti. Lorem 
+            ipsum dolor sit amet consectetur adipisicing 
+            elit. Temporibus, aut!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
+            <br>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate, corrupti. Lorem 
+            ipsum dolor sit amet consectetur adipisicing 
+            elit. Temporibus, aut!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, facilis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
+        </p>
+        </div>
+    </div>
 </section>
 
 <div class="divider"></div>
 
-<div class="video-container">
-    
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="images/IMG_7938.JPG" alt="">
+    </div>
 </div>
+
+<div class="divider"></div>
+
+<section class="main-content coop-container">
+    <div class="coop">
+        <div class="coop-history"></div>
+        <div class="coop-possibilities"></div>
+        <div class="coop-logos"></div>
+    </div>
+</section>
+
+<div class="divider"></div>
 
 <section class="contact-container" >
     <h1>KONTAKT</h1>
@@ -109,6 +205,7 @@
         <h3>info@mahetalu.ee</h3>
     </div>
 </section>
+
 
 <section class="footer-container">
     <footer>
@@ -139,8 +236,20 @@
 /*             if(el.classList.contains('intro')) {
                 el.style.opacity = '60%'
             } */
-            if(el.classList.contains('intro')) {
+            if(el.classList.contains('intro-first')) {
                 el.classList.add('animate__slideInRight')
+            }
+            if(el.classList.contains('intro-second')) {
+                el.classList.add('animate__slideInLeft')
+            }
+            if(el.classList.contains('first-goal')) {
+                el.classList.add('animate__slideInDown')
+            }
+            if(el.classList.contains('second-goal')) {
+                el.classList.add('animate__slideInUp')
+            }
+            if(el.classList.contains('third-goal')) {
+                el.classList.add('animate__zoomIn')
             }
         }
     });
