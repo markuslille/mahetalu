@@ -19,6 +19,11 @@
   }
 }
 
+p,
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -112,15 +117,6 @@ header {
 
 /* BANNER */
 
-/* .banner-container-test {
-  width: 100vw;
-  height: 100vh;
-}
-
-.banner-container-test > video {
-  width: 100%;
-} */
-
 .banner-container {
   z-index: -1;
   position: no-repeat fixed center;
@@ -154,6 +150,18 @@ header {
 
 /* MAIN CONTENT */
 
+.main-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  border-left: 30px solid #ffffff;
+  border-right: 50px solid #ffffff;
+}
+
 .divider {
   background-color: #ffffff;
   width: 100vw;
@@ -169,18 +177,6 @@ header {
   height: 40vh;
 }
 
-.main-content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background-image: #000000;
-  align-items: center;
-  width: 100vw;
-  height: 90vh;
-  border-left: 30px solid #ffffff;
-  border-right: 50px solid #ffffff;
-}
-
 /* .bg-img {
   position: absolute;
   background-image: url("images/IMG_7927.jpeg");
@@ -193,13 +189,17 @@ header {
   background-position: center top;
 } */
 
-.intro-container::after {
+.intro-container {
+  background: linear-gradient(rgba(0, 0, 0, 1));
+}
+
+.intro-container::before {
   content: " ";
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #000000;
-  opacity: 90%;
+  /* background-color: #000000; */
+  opacity: 100%;
   z-index: 1;
   background-image: url("images/IMG_7931.JPG");
   background-size: cover;
@@ -267,7 +267,7 @@ header {
   width: 100%;
   height: 100%;
   position: absolute;
-  opacity: 90%;
+  opacity: 100%;
   z-index: 1;
   background-image: url("images/DSC_0915.JPG");
   background-position: center top 0%;
@@ -325,15 +325,12 @@ header {
   width: 20vw;
 }
 
-.coop-container {
-}
-
 .coop-container::before {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  opacity: 90%;
+  opacity: 100%;
   z-index: 1;
   background-image: url("images/IMG_0315.JPG");
   background-position: center top;
@@ -343,6 +340,101 @@ header {
 
 .coop-container > * {
   z-index: 100;
+}
+
+.coop-history {
+  background-color: #ffffff;
+  height: 40vh;
+  position: absolute;
+  left: 0%;
+  top: 5%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.coop-possibilities {
+  background-color: #ffffff;
+  height: 40vh;
+  position: absolute;
+  right: 0%;
+  top: 15%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.coop-logos {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 30vw;
+  height: 10vh;
+  position: absolute;
+  right: 0%;
+  bottom: 5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.coop-logos img {
+  padding-left: 20px;
+}
+
+.rimi-logo {
+  height: 20vh;
+}
+
+.kaubamaja-logo {
+  height: 10vh;
+}
+
+.video-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 100%;
+  z-index: 1;
+  background-image: url("images/IMG_7938.JPG");
+  background-position: center top;
+  background-size: cover;
+  transition: opacity 1s;
+}
+
+.video-container > * {
+  z-index: 100;
+}
+
+.video-container {
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 70vw;
+  height: 0vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.video > iframe {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+  height: 80vh;
+  /* border: 2px solid #ffffff; */
 }
 
 /* CONTACT */
