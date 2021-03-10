@@ -120,6 +120,7 @@ header {
 .banner-container {
   z-index: -1;
   position: no-repeat fixed center;
+  border-bottom: 80px solid #ffffff;
 }
 
 .banner {
@@ -160,12 +161,8 @@ header {
   height: 90vh;
   border-left: 30px solid #ffffff;
   border-right: 50px solid #ffffff;
-}
-
-.divider {
-  background-color: #ffffff;
-  width: 100vw;
-  height: 10vh;
+  border-top: 80px solid #ffffff;
+  box-sizing: border-box;
 }
 
 .divider img {
@@ -176,18 +173,6 @@ header {
 .parallax-container {
   height: 40vh;
 }
-
-/* .bg-img {
-  position: absolute;
-  background-image: url("images/IMG_7927.jpeg");
-  width: 100%;
-  height: 100%;
-  opacity: 60%;
-  z-index: 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-} */
 
 .intro-container {
   background: linear-gradient(rgba(0, 0, 0, 1));
@@ -262,6 +247,111 @@ header {
   width: 40vw;
 }
 
+/* .gallery-container {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  border-left: 30px solid #ffffff;
+  border-right: 50px solid #ffffff;
+  border-top: 80px solid #ffffff;
+}
+
+.gallery-container > h1 {
+  position: absolute;
+  left: 50%;
+  font-family: "Big Shoulders Display", cursive;
+  color: black;
+}
+
+.thumbnail-image {
+  padding: 10px;
+  width: auto;
+  height: 30vh;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.middle {
+  transition: 0.5s ease;
+  position: absolute;
+  background-color: #000000;
+  width: 17.5vw;
+  height: 27vh;
+  opacity: 0;
+  text-align: center;
+}
+
+.gallery-container:hover .img {
+  opacity: 0.3;
+}
+
+.gallery-container:hover .middle {
+  opacity: 0.5;
+} */
+
+.gallery-container-outer {
+  position: absolute;
+  right: 0%;
+  bottom: 3%;
+}
+
+.gallery-container-inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail-image-inner {
+  width: auto;
+  height: 30vh;
+  opacity: 1;
+  transition: 0.7s ease;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.middle-inner {
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(233, 233, 233, 0) 100%
+  );
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.text-inner {
+  color: black;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.fancybox-gallery {
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+
+.fancybox-inner {
+  bottom: 30% !important;
+}
+
 .goals-container::before {
   content: "";
   width: 100%;
@@ -312,7 +402,7 @@ header {
 }
 
 .first-goal {
-  bottom: 35%;
+  bottom: 25%;
   left: 100%;
   position: absolute;
   width: 20vw;
@@ -321,7 +411,7 @@ header {
 .second-goal {
   position: absolute;
   right: 100%;
-  top: 35%;
+  top: 30%;
   width: 20vw;
 }
 

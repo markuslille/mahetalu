@@ -22,4 +22,10 @@ panels.forEach((panel) => {
 
 document.getElementById('year').innerHTML = `Mahetalu ${new Date().getFullYear()}`;
 
-
+$('[data-fancybox="images"]').fancybox({
+	defaultType: 'image',
+  fullScreen: {
+    autoStart: false
+  },
+  wheel: false,
+});

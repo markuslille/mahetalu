@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Mahetalu</title>
@@ -42,7 +43,6 @@
     </div>
 </section>
 
-<div class="divider"></div>
 
 <div class="parallax-container">
     <div class="parallax">
@@ -50,7 +50,7 @@
     </div>
 </div>
 
-<div class="divider"></div>
+
 
 <section class="main-content intro-container">
     <!-- <div class="bg-img"></div> -->
@@ -95,17 +95,33 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, animi!
         </p>
     </div>
+    <div class="gallery-container-outer">
+        <div class="gallery-container-inner">
+            <img src="/images/products/IMG_2263.jpeg" alt="thumbnail" class="thumbnail-image-inner">
+            <div class="fancybox-gallery" style="display: none;">
+                <a href="/images/products/IMG_2263.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="1000" data-height="700"></a>
+                <a href="/images/products/IMG_2264.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="1000" data-height="700"></a>
+                <a href="/images/products/IMG_2265.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="1000" data-height="700"></a>
+                <a href="/images/products/IMG_2266.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="700" data-height="700"></a>
+                <a href="/images/products/IMG_2267.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="600" data-height="700"></a>
+                <a href="/images/products/IMG_2268.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="700" data-height="700"></a>
+                <a href="/images/products/IMG_2269.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="700" data-height="700"></a>
+                <a href="/images/products/IMG_2270.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="700" data-height="700"></a>
+                <a href="/images/products/IMG_2271.jpeg" data-thumb="https://source.unsplash.com/Ai2TRdvI6gM/240x160" data-fancybox="images"data-width="600" data-height="700"></a>
+            </div>
+            <div class="middle-inner" data-fancybox-trigger="images">
+                <h1 class="text-inner">Tootevalik</h1>
+            </div>
+        </div>
+    </div>
 </section>
 
-<div class="divider"></div>
-
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="images/IMG_7938.JPG" alt="">
+<!-- <section class="gallery-container">
+    <img src="/images/products/IMG_2263.jpeg" alt="thumbnail" class="thumbnail-image">
+    <div class="middle">
+        <h1>Galerii</h1>
     </div>
-</div>
-
-<div class="divider"></div>
+</section> -->
 
 <section class="main-content goals-container">
             <h1>Meie põhimõtted</h1>
@@ -173,15 +189,6 @@
     </div>
 </section>
 
-<div class="divider"></div>
-
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="images/IMG_7938.JPG" alt="">
-    </div>
-</div>
-
-<div class="divider"></div>
 
 <section class="main-content coop-container">
     <div class="coop-history">
@@ -230,15 +237,7 @@
     </div>
 </section>
 
-<div class="divider"></div>
 
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="images/IMG_7938.JPG" alt="">
-    </div>
-</div>
-
-<div class="divider"></div>
 
 <section class="main-content video-container">
     <div class="video">
@@ -246,7 +245,7 @@
     </div>
 </section>
 
-<div class="divider"></div>
+
 
 <section class="contact-container" >
     <h1>KONTAKT</h1>
@@ -273,10 +272,12 @@
     </footer>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous"></script>
-<script>let rellax = new Rellax('.rellax');</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 <script>
@@ -313,4 +314,3 @@
 </body>
 </html>
 
-<!-- class="rellax" data-rellax-speed="-5" -->
