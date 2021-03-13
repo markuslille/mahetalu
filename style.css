@@ -9,6 +9,8 @@
   --dark-green: ##044707;
 }
 
+/* KEYFRAMES */
+
 @keyframes onLoadOpacity {
   0% {
     opacity: 0;
@@ -32,6 +34,7 @@ h3 {
 
 body,
 html {
+  scroll-behavior: smooth;
   /* height: 100%; */
   overflow-x: hidden;
   /* padding-top: 90px; */
@@ -163,11 +166,6 @@ header {
   border-right: 50px solid #ffffff;
   border-top: 80px solid #ffffff;
   box-sizing: border-box;
-}
-
-.divider img {
-  width: auto;
-  height: 200px;
 }
 
 .parallax-container {
@@ -507,6 +505,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 80px solid #ffffff;
 }
 
 .video {
@@ -529,7 +528,8 @@ header {
 
 /* CONTACT */
 
-.contact-container {
+/* .contact-container {
+  border-top: 80px solid #ffffff;
   color: black;
   height: 60vh;
   width: 100vw;
@@ -538,28 +538,63 @@ header {
   flex-direction: row;
   justify-content: space-around;
   padding-top: 20px;
+  border-bottom: 80px solid #ffffff;
+} */
+
+.contact-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 100%;
+  z-index: 1;
+  background-image: url("images/IMG_7020.JPG");
+  background-position: center;
+  background-size: cover;
+  transition: opacity 1s;
+}
+
+.contact-container > * {
+  z-index: 100;
 }
 
 .contact-container > h1 {
-  font-family: "Staatliches", cursive;
+  position: absolute;
+  top: 5%;
+  font-family: "Big Shoulders Display", cursive;
+  color: #ffffff;
+}
+
+.info-container {
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  padding: 30px;
 }
 
 .map {
+  border: 1px solid #000000;
   height: 400px;
   width: 500px;
   border: 1px solid;
   background-color: #eee;
 }
 
+#map {
+  border: 3px solid #000000;
+  height: 40vh;
+  width: 35vw;
+}
+
 /* FOOTER */
 
 .footer-container {
+  border-top: 80px solid #ffffff;
   background-color: #136b2e;
-  z-index: 1;
   width: 100%;
   top: 0;
-  position: relative;
-  /* background-color: rgb(255, 255, 255); */
+  /*   position: relative;
+ */ /* background-color: rgb(255, 255, 255); */
   transition: background-color ease-out 0.5s;
   margin-top: auto;
   flex-shrink: 0;
@@ -567,15 +602,15 @@ header {
 
 footer {
   display: flex;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
 
-#year {
+.year {
+  opacity: 1;
   text-align: center;
-  font-family: "Staatliches", cursive;
+  font-family: "Big Shoulders Display", cursive;
   color: white;
 }
 
@@ -585,7 +620,7 @@ footer {
   cursor: pointer;
   margin-right: auto;
   margin-left: 20px;
-  opacity: 0;
+  opacity: 1;
   animation-duration: 800ms;
 }
 
@@ -597,4 +632,82 @@ footer {
 .logo-container-footer img {
   padding-left: 20px;
   /* height: 50px; */
+}
+
+/* MEDIA QUERIES */
+
+/* PHONES */
+@media only screen and (max-device-width: 600px) {
+  /* HEADER AND BANNER */
+  .links-container {
+    display: flex;
+    position: absolute;
+    top: 10vh;
+  }
+  .logo-container {
+    position: relative;
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    top: 100%;
+    left: 18%;
+  }
+  .banner {
+    height: 90vh;
+  }
+  .banner h1 {
+    left: 5%;
+  }
+  .parallax-container {
+    height: 20vh;
+  }
+  .main-content {
+    height: 100vh;
+  }
+  /* INTRO */
+  .intro-first {
+    height: 40vh;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    background-color: #ffffff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+  }
+
+  .intro-first,
+  .intro-second h3 {
+    /* align-self: start; */
+    font-family: "Big Shoulders Display", cursive;
+    color: black;
+    display: inline-block;
+  }
+
+  .intro-first > p,
+  .intro-second > p {
+    /* padding-left: 40px; */
+    font-family: "Big Shoulders Display", cursive;
+    color: black;
+    width: 30vw;
+    word-wrap: break-word;
+  }
+
+  .intro-second {
+    height: 40vh;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    background-color: #ffffff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+  }
 }

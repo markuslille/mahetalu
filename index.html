@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahetalu</title>
 </head>
 <body>
@@ -16,12 +16,15 @@
 <section class="header-container">
     <header>
         <img class="logo animate__animated animate__zoomIn" src="images/mahetalu-valge.png" alt="logo">
-        <div>
+        <div class="links-container">
             <ul class="nav-links">
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#story">Meie lugu</a></li>
                 <li class="vertical-rule"></li>
-                <li><a href="#">Koostoovoimalused</a></li>
+                <li><a href="#points">Põhimõtted</a></li>
                 <li class="vertical-rule"></li>
+                <li><a href="#coop">Koostoovoimalused</a></li>
+                <li class="vertical-rule"></li>
+                <li><a href="#contacts">Kontakt</a></li>
             </ul>
         </div>
         <div class="logo-container">
@@ -38,8 +41,7 @@
             <source src="/images/mahetalu-vid.mp4" type="video/mp4">
         </video> 
         <!-- <div class="bg-img"></div> -->
-        <h1 class="animate__animated animate__zoomIn animate__slow">Kasvatatud loodussõbralikult,<br>ilma kemikaalideta!</h1>
-        <!-- <h1 class="animate__animated animate__zoomIn animate__slow">Kasvatatud loodussõbralikult,<br>ilma kemikaalideta!</h1> -->
+        <h1 class="banner-text animate__animated animate__zoomIn animate__slow">Kasvatatud loodussõbralikult,<br>ilma kemikaalideta!</h1>
     </div>
 </section>
 
@@ -52,7 +54,7 @@
 
 
 
-<section class="main-content intro-container">
+<section class="main-content intro-container" id="story">
     <!-- <div class="bg-img"></div> -->
     <h1>Tere tulemast!</h1>
     <div class="intro-first animate__animated animate__slow" data-scroll>
@@ -123,7 +125,7 @@
     </div>
 </section> -->
 
-<section class="main-content goals-container">
+<section class="main-content goals-container" id="points">
             <h1>Meie põhimõtted</h1>
     <div class="goals">
         <div class="goal first-goal animate__animated animate__slow" data-scroll>
@@ -190,7 +192,7 @@
 </section>
 
 
-<section class="main-content coop-container">
+<section id="coop" class="main-content coop-container">
     <div class="coop-history">
         <h3>Meie mahetoodang</h3>
         <p>
@@ -245,13 +247,18 @@
     </div>
 </section>
 
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="images/IMG_7938.JPG" alt="">
+    </div>
+</div>
 
 
-<section class="contact-container" >
+<section id="contacts" class="main-content contact-container" >
     <h1>KONTAKT</h1>
-    <div class="map "></div>
+    <div id="map"></div>
     <div class="info-container">
-        <h3>Kiltsimäe talu Mallavere küla</h3>
+        <h3>Kiltsimäe talu, Mallavere küla</h3>
         <h3>Raasiku vald Harjumaa 75202</h3>
         <br>
         <h3> +372 5662 6716</h3>
@@ -261,10 +268,10 @@
 </section>
 
 
-<section class="footer-container">
+<section class="footer-container" id="footer">
     <footer>
         <img class="logo-footer" src="images/mahetalu-valge.png" alt="logo">
-        <div id="year"></div>
+        <div class="year"></div>
         <div class="logo-container-footer">
             <img src="http://www.maheklubi.ee/gfx/EU_Organic_Logo_Colour_rgb.jpg" alt="eu-organic-logo">
             <img src="http://www.maheklubi.ee/gfx/okomark_vaike_1.png" alt="oko-logo">
@@ -310,6 +317,16 @@
         }
     });
 </script>
+<script>
+    $('[data-fancybox="images"]').fancybox({
+        defaultType: 'image',
+      fullScreen: {
+        autoStart: false
+      },
+      wheel: false,
+    });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6EZy0t1niuMAhm4mmIn3OVibGBvTR8mI&callback=initMap&libraries=&v=weekly" async></script>
 <script src="script.js"></script>
 </body>
 </html>

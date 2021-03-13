@@ -1,3 +1,5 @@
+window.onload = initMap()
+
 window.onscroll = function(){
   if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.querySelector('.header-container').style.opacity = '0' 
@@ -20,12 +22,17 @@ panels.forEach((panel) => {
   })
 })
 
-document.getElementById('year').innerHTML = `Mahetalu ${new Date().getFullYear()}`;
 
-$('[data-fancybox="images"]').fancybox({
-	defaultType: 'image',
-  fullScreen: {
-    autoStart: false
-  },
-  wheel: false,
-});
+function initMap() {
+  document.querySelector('.year').innerHTML = `Mahetalu ${new Date().getFullYear()}`;
+  const location = {lat: 59.2659 ,lng: 25.1181 }
+  const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: location
+  })
+
+  const marker = new google.maps.Marker({
+    position: location,
+    map: map,
+  });
+}
