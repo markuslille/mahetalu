@@ -663,51 +663,178 @@ footer {
     height: 20vh;
   }
   .main-content {
-    height: 100vh;
+    height: 150vh;
   }
   /* INTRO */
   .intro-first {
-    height: 40vh;
+    height: 50vh;
     position: absolute;
-    right: 0;
-    top: 5%;
+    right: -1%;
+    top: 6%;
     background-color: #ffffff;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vw;
-  }
-
-  .intro-first,
-  .intro-second h3 {
-    /* align-self: start; */
-    font-family: "Big Shoulders Display", cursive;
-    color: black;
+    text-align: right;
+    width: 80vw;
     display: inline-block;
+    font-family: "Big Shoulders Display", cursive;
+    white-space: normal;
   }
-
+  .intro-first > h3,
+  .intro-second > h3 {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+  }
+  .intro-container > h1 {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    display: none;
+  }
+  .inner-text {
+    overflow-wrap: break-word;
+  }
+  .intro-second {
+    height: 50vh;
+    position: absolute;
+    left: -1%;
+    bottom: 20%;
+    background-color: #ffffff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    align-items: center;
+    width: 80vw;
+    overflow-wrap: break-word;
+  }
   .intro-first > p,
   .intro-second > p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin: 0 auto;
+    text-align: left;
     /* padding-left: 40px; */
     font-family: "Big Shoulders Display", cursive;
     color: black;
     width: 30vw;
+    white-space: normal;
+  }
+  .gallery-container-outer {
+    right: -0.5%;
+  }
+  .thumbnail-image-inner {
+    width: auto;
+    height: 20vh;
+    opacity: 1;
+    transition: 0.7s ease;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .goals-container {
+    position: relative;
+  }
+  .goals-container > h1 {
+    font-family: "Big Shoulders Display", cursive;
+    color: #000000;
+    position: absolute;
+    top: 0%;
+    left: 3%;
+  }
+
+  .goal > * {
+    font-family: "Big Shoulders Display", cursive;
+    text-align: center;
+  }
+
+  .goal {
+    overflow-wrap: break-word;
+    padding: 15px;
+    width: 70vw;
+    margin: 50px;
+    height: 42vh;
+    background-color: #ffffff;
+  }
+
+  .goal > p {
+    overflow-wrap: break-word;
     word-wrap: break-word;
   }
 
-  .intro-second {
-    height: 40vh;
+  .first-goal {
+    bottom: 80%;
+    left: 5%;
     position: absolute;
-    left: 0;
-    bottom: 5%;
+  }
+
+  .second-goal {
+    position: absolute;
+    right: 5%;
+    top: 80%;
+  }
+  .third-goal {
+    padding: 40px;
+    width: 100vw;
+  }
+
+  .coop-history {
+    overflow-wrap: break-word;
     background-color: #ffffff;
-    padding: 50px;
+    height: 45vh;
+    position: absolute;
+    left: -1%;
+    top: 10%;
+    padding: 15px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: ;
+    width: 70vw;
+  }
+
+  .coop-possibilities {
+    background-color: #ffffff;
+    height: 45vh;
+    position: absolute;
+    right: -1%;
+    top: 50%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 70vw;
+  }
+
+  .coop-logos {
+    background-color: #ffffff;
+    width: 100vw;
+    border-radius: 0px;
+    height: 10vh;
+    position: absolute;
+    right: -1%;
+    bottom: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .coop-logos img {
+    padding-left: 10px;
+  }
+
+  .rimi-logo {
+    height: 10vh;
+  }
+
+  .kaubamaja-logo {
+    padding-right: 10px;
+    height: 5vh;
   }
 }
