@@ -22,7 +22,7 @@
 }
 
 p,
-h3 {
+h3, h1 {
   font-family: "Big Shoulders Display", cursive;
 }
 
@@ -245,50 +245,6 @@ header {
   width: 40vw;
 }
 
-/* .gallery-container {
-  position: relative;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  border-left: 30px solid #ffffff;
-  border-right: 50px solid #ffffff;
-  border-top: 80px solid #ffffff;
-}
-
-.gallery-container > h1 {
-  position: absolute;
-  left: 50%;
-  font-family: "Big Shoulders Display", cursive;
-  color: black;
-}
-
-.thumbnail-image {
-  padding: 10px;
-  width: auto;
-  height: 30vh;
-  opacity: 1;
-  transition: 0.5s ease;
-}
-
-.middle {
-  transition: 0.5s ease;
-  position: absolute;
-  background-color: #000000;
-  width: 17.5vw;
-  height: 27vh;
-  opacity: 0;
-  text-align: center;
-}
-
-.gallery-container:hover .img {
-  opacity: 0.3;
-}
-
-.gallery-container:hover .middle {
-  opacity: 0.5;
-} */
 
 .gallery-container-outer {
   position: absolute;
@@ -428,6 +384,12 @@ header {
 
 .coop-container > * {
   z-index: 100;
+}
+
+.coop-container > h1 {
+  position: absolute;
+  top: 3%;
+  left: 50%;
 }
 
 .coop-history {
@@ -670,52 +632,57 @@ footer {
     height: 150vh;
   }
   /* INTRO */
-  .intro-first {
+  .intro-first, .intro-second {
     height: 50vh;
     position: absolute;
-    right: -1%;
-    top: 6%;
+
     background-color: #ffffff;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: right;
-    width: 80vw;
+    /* text-align: right; */
+    width: 75vw;
     display: inline-block;
     font-family: "Big Shoulders Display", cursive;
     white-space: normal;
   }
+  .intro-first {
+    right: -1%;
+    top: 6%;
+  }
+  .intro-first > * {
+    text-align: left;
+  }
   .intro-first > h3,
   .intro-second > h3 {
-    position: absolute;
     top: 5%;
     left: 30%;
   }
-  .intro-container > h1 {
-    position: absolute;
-    top: 1%;
-    left: 5%;
-    display: none;
+  .intro-second > h3 {
+    top: 0;
   }
+
   .inner-text {
     overflow-wrap: break-word;
   }
   .intro-second {
     height: 50vh;
     position: absolute;
-    left: -1%;
-    bottom: 20%;
     background-color: #ffffff;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: right;
     align-items: center;
-    width: 80vw;
-    overflow-wrap: break-word;
+    text-align: right;
+    width: 75vw;
+    display: inline-block;
+    font-family: "Big Shoulders Display", cursive;
+    white-space: normal;
+    left: -1%;
+    bottom: 20%;
   }
   .intro-first > p,
   .intro-second > p {
@@ -743,13 +710,19 @@ footer {
   .goals-container {
     position: relative;
   }
-  .goals-container > h1 {
-    font-family: "Big Shoulders Display", cursive;
-    color: #000000;
-    position: absolute;
-    top: 0%;
+  .goals-container > h1,
+  .coop-container > h1,
+  .contact-container > h1,
+  .intro-container > h1 {
+    top: -4%;
     left: 3%;
+    color: #000000;
   }
+  .contact-container > h1 {
+    top: -6%;
+
+  }
+
 
   .goal > * {
     font-family: "Big Shoulders Display", cursive;
@@ -775,6 +748,9 @@ footer {
     left: 5%;
     position: absolute;
   }
+  .first-goal > * {
+    text-align: right;
+  }
 
   .second-goal {
     position: absolute;
@@ -785,6 +761,11 @@ footer {
     padding: 40px;
     width: 100vw;
   }
+  .second-goal > * {
+    text-align: left;
+  }
+
+ 
 
   .coop-history {
     overflow-wrap: break-word;
@@ -807,7 +788,7 @@ footer {
     height: 45vh;
     position: absolute;
     right: -1%;
-    top: 50%;
+    top: 45%;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -829,16 +810,16 @@ footer {
     align-items: center;
   }
 
-  .coop-logos img {
-    padding-left: 10px;
+ /*  .coop-logos img {
+    padding-left: 20px;
   }
-
+ */
   .rimi-logo {
     height: 10vh;
   }
 
   .kaubamaja-logo {
-    padding-right: 10px;
+    padding-right: 20px;
     height: 5vh;
   }
   .video-container {
@@ -866,9 +847,7 @@ footer {
     height: 100%;
     /* border: 2px solid #ffffff; */
   }
-  .contact-container > h1 {
-    top: 5%;
-  }
+
   .contact-container {
     height: 100vh;
   }
@@ -876,7 +855,7 @@ footer {
   .info-container {
 
     right: -1%;
-    bottom: 2%;
+    bottom: 0;
     padding: 30px;
   }
 
@@ -935,4 +914,8 @@ footer {
     padding-left: 10px;
     /* height: 50px; */
   }
+  .fancybox-inner {
+    bottom: 35% !important;
+  }
+  
 }
