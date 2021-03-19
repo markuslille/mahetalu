@@ -158,7 +158,6 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-
   align-items: center;
   width: 100vw;
   height: 90vh;
@@ -302,8 +301,15 @@ header {
   margin: 0;
 }
 
+
 .fancybox-inner {
-  bottom: 30% !important;
+  bottom: 23% !important;
+}
+
+.fancybox-thumbs {
+  top: 30% !important;
+  bottom: 0;
+  background: none;
 }
 
 .goals-container::before {
@@ -376,7 +382,7 @@ header {
   position: absolute;
   opacity: 100%;
   z-index: 1;
-  background-image: url("images/IMG_0315.JPG");
+  background-image: url("images/DSC_0915.JPG");
   background-position: center top;
   background-size: cover;
   transition: opacity 1s;
@@ -422,7 +428,6 @@ header {
 
 .coop-logos {
   background-color: #ffffff;
-  border-radius: 10px;
   width: 30vw;
   height: 10vh;
   position: absolute;
@@ -445,6 +450,39 @@ header {
   height: 10vh;
 }
 
+.showcase-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.showcase {
+  position: relative;
+  width: 30vw;
+  height: 80%;
+}
+.showcase img {
+  width: 100%;
+  height: 100%;
+}
+.showcase-second {
+  margin: 0px 20px;
+  box-sizing: border-box;
+}
+.caption {
+  position: absolute;
+  width: 15vw;
+  height: 5vh;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+  font-family: "Big Shoulders Display", cursive;
+  padding: 5px;
+  text-align: right;
+}
+
 .video-container::before {
   content: "";
   width: 100%;
@@ -452,7 +490,7 @@ header {
   position: absolute;
   opacity: 100%;
   z-index: 1;
-  background-image: url("images/IMG_7938.JPG");
+  background-color: #ffffff;
   background-position: center top;
   background-size: cover;
   transition: opacity 1s;
@@ -472,21 +510,28 @@ header {
 
 .video {
   width: 70vw;
-  height: 0vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 30%;
+  padding-left: 0;
 }
 
 .video > iframe {
+  border: 2px solid #000000;
+  display: block;
   position: absolute;
-  top: 15%;
+  top: 0;
   left: 0;
-  bottom: 10%;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   /* border: 2px solid #ffffff; */
 }
+
+
 
 /* CONTACT */
 
@@ -572,8 +617,6 @@ footer {
 .year {
   position: absolute;
   left: 50%;
-  
-
   opacity: 1;
   text-align: right;
   font-family: "Big Shoulders Display", cursive;
@@ -720,7 +763,6 @@ footer {
   }
   .contact-container > h1 {
     top: -6%;
-
   }
 
 
@@ -800,7 +842,6 @@ footer {
   .coop-logos {
     background-color: #ffffff;
     width: 100vw;
-    border-radius: 0px;
     height: 10vh;
     position: absolute;
     right: -1%;
@@ -855,7 +896,7 @@ footer {
   .info-container {
 
     right: -1%;
-    bottom: 0;
+    bottom: -1%;
     padding: 30px;
   }
 
@@ -916,6 +957,32 @@ footer {
   }
   .fancybox-inner {
     bottom: 35% !important;
+  } 
+  .showcase-container {
+    flex-direction: column;
+    margin-top: 50px;
   }
   
+  .showcase {
+    position: relative;
+    width: 80vw;
+    height: 80%;
+    box-sizing: border-box;
+  }
+
+  .showcase-second {
+    margin: 50px 0px;
+  }
+  .caption {
+    position: absolute;
+    width: 60vw;
+    height: 10vh;
+    background-color: #ffffff;
+    bottom: -1%;
+    left: -1%;
+    font-family: "Big Shoulders Display", cursive;
+    padding: 5px;
+    text-align: right;
+    font-size: larger;
+  }
 }

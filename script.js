@@ -11,18 +11,7 @@ window.onscroll = function(){
     inst.update(scrollTop);
   }); */
 }
-
-
-
-const panels = document.querySelectorAll('.panel')
-
-panels.forEach((panel) => {
-  panel.addEventListener('click', () => {
-    panel.classList.toggle('active')
-  })
-})
-
-
+s
 function initMap() {
   document.querySelector('.year').innerHTML = `Mahetalu ${new Date().getFullYear()}`;
   const location = {lat: 59.2659 ,lng: 25.1181 }
