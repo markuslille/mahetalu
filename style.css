@@ -22,7 +22,8 @@
 }
 
 p,
-h3, h1 {
+h3,
+h1 {
   font-family: "Big Shoulders Display", cursive;
 }
 
@@ -244,7 +245,6 @@ header {
   width: 40vw;
 }
 
-
 .gallery-container-outer {
   position: absolute;
   right: 0%;
@@ -300,7 +300,6 @@ header {
   top: 0;
   margin: 0;
 }
-
 
 .fancybox-inner {
   bottom: 23% !important;
@@ -439,7 +438,7 @@ header {
 }
 
 .coop-logos img {
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .rimi-logo {
@@ -447,7 +446,8 @@ header {
 }
 
 .kaubamaja-logo {
-  height: 10vh;
+  height: 8vh;
+  padding-right: 20px;
 }
 
 .showcase-container {
@@ -456,12 +456,18 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  /*   margin-top: 5vh;
+ */
 }
-
+.showcase-container > h1 {
+  position: absolute;
+  top: -5%;
+  right: 5%;
+}
 .showcase {
   position: relative;
   width: 30vw;
-  height: 80%;
+  height: auto;
 }
 .showcase img {
   width: 100%;
@@ -473,11 +479,11 @@ header {
 }
 .caption {
   position: absolute;
-  width: 15vw;
-  height: 5vh;
+  width: 20vw;
+  height: auto;
   background-color: #ffffff;
-  bottom: 0;
-  left: 0;
+  bottom: 3%;
+  right: 0;
   font-family: "Big Shoulders Display", cursive;
   padding: 5px;
   text-align: right;
@@ -521,7 +527,8 @@ header {
 }
 
 .video > iframe {
-  border: 2px solid #000000;
+  /*   border: 2px solid #000000;
+ */
   display: block;
   position: absolute;
   top: 0;
@@ -530,8 +537,6 @@ header {
   height: 100%;
   /* border: 2px solid #ffffff; */
 }
-
-
 
 /* CONTACT */
 
@@ -675,7 +680,8 @@ footer {
     height: 150vh;
   }
   /* INTRO */
-  .intro-first, .intro-second {
+  .intro-first,
+  .intro-second {
     height: 50vh;
     position: absolute;
 
@@ -765,7 +771,6 @@ footer {
     top: -6%;
   }
 
-
   .goal > * {
     font-family: "Big Shoulders Display", cursive;
     text-align: center;
@@ -806,8 +811,6 @@ footer {
   .second-goal > * {
     text-align: left;
   }
-
- 
 
   .coop-history {
     overflow-wrap: break-word;
@@ -851,7 +854,7 @@ footer {
     align-items: center;
   }
 
- /*  .coop-logos img {
+  /*  .coop-logos img {
     padding-left: 20px;
   }
  */
@@ -875,10 +878,10 @@ footer {
     width: 100vw;
     height: 60vh;
     position: relative;
-    overflow: hidden; 
-    padding-top: 56.25%; 
+    overflow: hidden;
+    padding-top: 56.25%;
   }
-  
+
   .video > iframe {
     position: absolute;
     top: 1%;
@@ -892,24 +895,22 @@ footer {
   .contact-container {
     height: 100vh;
   }
-  
-  .info-container {
 
+  .info-container {
     right: -1%;
     bottom: -1%;
     padding: 30px;
   }
 
-  
   #map {
     top: -10%;
     border: none;
     height: 40vh;
     width: 100vw;
   }
-  
+
   /* FOOTER */
-  
+
   .footer-container {
     border-top: 80px solid #ffffff;
     background-color: #136b2e;
@@ -922,7 +923,7 @@ footer {
     margin-top: auto;
     flex-shrink: 0;
   }
-  
+
   footer {
     display: flex;
     justify-content: center;
@@ -930,11 +931,11 @@ footer {
     padding: 10px;
     height: 10vh;
   }
-  
+
   .year {
     left: 45%;
   }
-  
+
   .logo-footer {
     width: 100px;
     height: auto;
@@ -944,12 +945,12 @@ footer {
     opacity: 1;
     animation-duration: 800ms;
   }
-  
+
   .logo-container-footer {
     padding-left: 0px;
     margin-left: auto;
   }
-  
+
   .logo-container-footer img {
     height: 5vh;
     padding-left: 10px;
@@ -957,12 +958,13 @@ footer {
   }
   .fancybox-inner {
     bottom: 35% !important;
-  } 
+  }
   .showcase-container {
     flex-direction: column;
     margin-top: 50px;
+    position: relative;
   }
-  
+
   .showcase {
     position: relative;
     width: 80vw;
