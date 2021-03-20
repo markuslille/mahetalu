@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 :root {
   --logo-color: white;
-  --main-green: #136b2e;
-  --dark-green: ##044707;
 }
 
 /* KEYFRAMES */
@@ -23,7 +19,8 @@
 
 p,
 h3,
-h1 {
+h1,
+div {
   font-family: "Big Shoulders Display", cursive;
 }
 
@@ -36,15 +33,12 @@ h1 {
 body,
 html {
   scroll-behavior: smooth;
-  /* height: 100%; */
   overflow-x: hidden;
-  /* padding-top: 90px; */
   background-color: #ffffff;
 }
 
 body {
   z-index: -99999999;
-  /*   height: 100vh; */
   display: flex;
   flex-direction: column;
   transform-style: preserve-3d;
@@ -54,17 +48,16 @@ body {
 /* NAVBAR */
 
 .header-container {
-  /*   background-color: #136b2e; */
   z-index: 1;
   width: 100%;
   top: 0;
   position: fixed;
-  /* background-color: rgb(255, 255, 255); */
   transition: opacity ease-out 0.5s;
 }
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -83,6 +76,7 @@ header {
 
 .nav-links {
   list-style: none;
+  padding-top: 20px;
 }
 
 .nav-links li {
@@ -104,10 +98,16 @@ header {
 
 .nav-links li.vertical-rule {
   border-left: 1px solid;
-  height: 30px;
+  height: 25px;
   position: relative;
-  top: 10px;
+  top: 0;
   padding: 0;
+}
+
+.flex-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logo-container {
@@ -148,7 +148,6 @@ header {
   position: absolute;
   left: 75vw;
   top: 30vh;
-  font-family: "Big Shoulders Display", cursive;
   color: #ffffff;
   font-weight: lighter;
 }
@@ -167,7 +166,18 @@ header {
   border-top: 80px solid #ffffff;
   box-sizing: border-box;
 }
-
+.main-content::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background-color: #000000; */
+  opacity: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
 .parallax-container {
   height: 40vh;
 }
@@ -177,24 +187,13 @@ header {
 }
 
 .intro-container::before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /* background-color: #000000; */
-  opacity: 100%;
-  z-index: 1;
   background-image: url("images/IMG_7931.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
 }
 
 .intro-container > h1 {
   position: absolute;
   top: 10%;
   left: 15%;
-  font-family: "Big Shoulders Display", cursive;
 }
 
 .intro-container > * {
@@ -218,7 +217,6 @@ header {
 .intro-first,
 .intro-second h3 {
   align-self: start;
-  font-family: "Big Shoulders Display", cursive;
   color: black;
   display: block;
 }
@@ -226,7 +224,6 @@ header {
 .intro-first > p,
 .intro-second > p {
   /* padding-left: 40px; */
-  font-family: "Big Shoulders Display", cursive;
   color: black;
   width: 30vw;
 }
@@ -292,7 +289,6 @@ header {
   position: absolute;
   bottom: 0;
   right: 3%;
-  font-family: "Big Shoulders Display", cursive;
 }
 
 .fancybox-gallery {
@@ -312,16 +308,7 @@ header {
 }
 
 .goals-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 100%;
-  z-index: 1;
   background-image: url("images/DSC_0915.JPG");
-  background-position: center top 0%;
-  background-size: cover;
-  transition: opacity 1s;
 }
 
 .goals-container {
@@ -340,7 +327,6 @@ header {
 }
 
 .goals-container > h1 {
-  font-family: "Big Shoulders Display", cursive;
   color: #000000;
   position: absolute;
   top: 10%;
@@ -348,7 +334,6 @@ header {
 }
 
 .goal > * {
-  font-family: "Big Shoulders Display", cursive;
   text-align: center;
 }
 
@@ -375,16 +360,7 @@ header {
 }
 
 .coop-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 100%;
-  z-index: 1;
   background-image: url("images/DSC_0915.JPG");
-  background-position: center top;
-  background-size: cover;
-  transition: opacity 1s;
 }
 
 .coop-container > * {
@@ -456,13 +432,10 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  /*   margin-top: 5vh;
- */
 }
 .showcase-container > h1 {
   position: absolute;
   top: -5%;
-  right: 5%;
 }
 .showcase {
   position: relative;
@@ -484,22 +457,8 @@ header {
   background-color: #ffffff;
   bottom: 3%;
   right: 0;
-  font-family: "Big Shoulders Display", cursive;
   padding: 5px;
   text-align: right;
-}
-
-.video-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 100%;
-  z-index: 1;
-  background-color: #ffffff;
-  background-position: center top;
-  background-size: cover;
-  transition: opacity 1s;
 }
 
 .video-container > * {
@@ -540,30 +499,9 @@ header {
 
 /* CONTACT */
 
-/* .contact-container {
-  border-top: 80px solid #ffffff;
-  color: black;
-  height: 60vh;
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 20px;
-  border-bottom: 80px solid #ffffff;
-} */
-
 .contact-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 100%;
-  z-index: 1;
   background-image: url("images/IMG_7020.JPG");
   background-position: center;
-  background-size: cover;
-  transition: opacity 1s;
 }
 
 .contact-container > * {
@@ -573,7 +511,6 @@ header {
 .contact-container > h1 {
   position: absolute;
   top: 5%;
-  font-family: "Big Shoulders Display", cursive;
   color: #ffffff;
 }
 
@@ -624,7 +561,6 @@ footer {
   left: 50%;
   opacity: 1;
   text-align: right;
-  font-family: "Big Shoulders Display", cursive;
   color: white;
 }
 
@@ -694,7 +630,6 @@ footer {
     /* text-align: right; */
     width: 75vw;
     display: inline-block;
-    font-family: "Big Shoulders Display", cursive;
     white-space: normal;
   }
   .intro-first {
@@ -728,7 +663,6 @@ footer {
     text-align: right;
     width: 75vw;
     display: inline-block;
-    font-family: "Big Shoulders Display", cursive;
     white-space: normal;
     left: -1%;
     bottom: 20%;
@@ -740,7 +674,6 @@ footer {
     margin: 0 auto;
     text-align: left;
     /* padding-left: 40px; */
-    font-family: "Big Shoulders Display", cursive;
     color: black;
     width: 30vw;
     white-space: normal;
@@ -762,7 +695,8 @@ footer {
   .goals-container > h1,
   .coop-container > h1,
   .contact-container > h1,
-  .intro-container > h1 {
+  .intro-container > h1,
+  .showcase-container > h1 {
     top: -4%;
     left: 3%;
     color: #000000;
@@ -772,7 +706,6 @@ footer {
   }
 
   .goal > * {
-    font-family: "Big Shoulders Display", cursive;
     text-align: center;
   }
 
@@ -854,10 +787,6 @@ footer {
     align-items: center;
   }
 
-  /*  .coop-logos img {
-    padding-left: 20px;
-  }
- */
   .rimi-logo {
     height: 10vh;
   }
@@ -866,6 +795,7 @@ footer {
     padding-right: 20px;
     height: 5vh;
   }
+
   .video-container {
     height: 100vh;
     padding-bottom: 0;
@@ -976,13 +906,10 @@ footer {
     margin: 50px 0px;
   }
   .caption {
-    position: absolute;
     width: 60vw;
     height: 10vh;
-    background-color: #ffffff;
     bottom: -1%;
     left: -1%;
-    font-family: "Big Shoulders Display", cursive;
     padding: 5px;
     text-align: right;
     font-size: larger;
