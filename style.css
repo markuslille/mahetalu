@@ -396,7 +396,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .showcase-container > h1 {
   position: absolute;
@@ -407,7 +407,7 @@ header {
 }
 .showcase-paragraph {
   background-color: #f3f3f3;
-  top: 12%;
+  top: 17%;
   width: 92vw;
   height: auto;
   position: absolute;
@@ -417,6 +417,7 @@ header {
 }
 
 .showcase {
+  margin-top: 20vh;
   position: relative;
   width: 30vw;
   height: auto;
@@ -427,6 +428,7 @@ header {
 }
 .showcase-second {
   margin: 0px 20px;
+  margin-top: 20vh;
   box-sizing: border-box;
 }
 .caption {
@@ -440,7 +442,9 @@ header {
   padding: 5px;
   text-align: right;
 }
-
+.showcase-third .caption {
+  width: 25vw;
+}
 .video-container::before {
   content: "";
   width: 100%;
