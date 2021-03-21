@@ -24,7 +24,7 @@ h2,
 div {
   font-family: "Big Shoulders Display", cursive;
 }
-p{
+p {
   font-size: 20px;
 }
 
@@ -205,17 +205,17 @@ header {
 }
 
 .intro-first {
-  height: 40vh;
+  height: auto;
   position: absolute;
-  right: 0;
+  right: -1%;
   top: 5%;
   background-color: #ffffff;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 50vw;
 }
 
 .intro-first,
@@ -233,23 +233,23 @@ header {
 }
 
 .intro-second {
-  height: 40vh;
+  height: auto;
   position: absolute;
-  left: 0;
+  left: -1%;
   bottom: 5%;
   background-color: #ffffff;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 45vw;
 }
 
 .gallery-container-outer {
   position: absolute;
   right: 0%;
-  bottom: 3%;
+  bottom: 2%;
 }
 
 .gallery-container-inner {
@@ -260,8 +260,8 @@ header {
 }
 
 .thumbnail-image-inner {
-  width: auto;
-  height: 30vh;
+  width: 15vw;
+  height: auto;
   opacity: 1;
   transition: 0.7s ease;
   border-radius: 15px 0px 0px 15px;
@@ -311,58 +311,6 @@ header {
   background: none;
 }
 
-.goals-container::before {
-  background-image: url("images/DSC_0915.JPG");
-}
-
-.goals-container {
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.goals-container > * {
-  z-index: 100;
-}
-
-.goals {
-  display: flex;
-  padding: 5px;
-  position: absolute;
-}
-
-.goals-container > h1 {
-  color: #000000;
-  position: absolute;
-  top: 10%;
-  left: 15%;
-}
-
-.goal > * {
-  text-align: center;
-}
-
-.goal {
-  padding: 15px;
-  width: 20vw;
-  margin: 50px;
-  height: 50vh;
-  background-color: #ffffff;
-}
-
-.first-goal {
-  bottom: 25%;
-  left: 100%;
-  position: absolute;
-  width: 20vw;
-}
-
-.second-goal {
-  position: absolute;
-  right: 100%;
-  top: 30%;
-  width: 20vw;
-}
-
 .coop-container::before {
   background-image: url("images/DSC_0915.JPG");
 }
@@ -374,43 +322,43 @@ header {
 .coop-container > h1 {
   position: absolute;
   top: 3%;
-  left: 50%;
+  left: 60%;
 }
 
 .coop-history {
   background-color: #ffffff;
-  height: 40vh;
+  height: auto;
   position: absolute;
-  left: 0%;
+  left: -1%;
   top: 5%;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 40vw;
+  align-items: left;
+  width: 45vw;
 }
 
 .coop-possibilities {
   background-color: #ffffff;
-  height: 40vh;
+  height: auto;
   position: absolute;
-  right: 0%;
+  right: -1%;
   top: 15%;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 45vw;
 }
 
 .coop-logos {
   background-color: #ffffff;
-  width: 52vw;
+  width: auto;
   height: 10vh;
   position: absolute;
-  right: 0%;
+  left: -2%;
   bottom: 5%;
   display: flex;
   justify-content: flex-end;
@@ -424,7 +372,6 @@ header {
 .rimi-logo {
   height: 10vh;
 }
-
 .kaubamaja-logo {
   height: 4vh;
   padding-right: 0px;
@@ -450,7 +397,6 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-
 }
 .showcase-container > h1 {
   position: absolute;
@@ -459,8 +405,7 @@ header {
 .showcase-container > p {
   color: #000000;
 }
-
-.showcase-paragraph{
+.showcase-paragraph {
   background-color: #f3f3f3;
   top: 12%;
   width: 92vw;
@@ -496,24 +441,12 @@ header {
   text-align: right;
 }
 
-
-/*
-.h1 {
-  height: 1vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-}
-*/
-
 .video-container::before {
   content: "";
   width: 100%;
   height: 150%;
   position: absolute;
-  opacity: 75%;
+  opacity: 60%;
   z-index: 1;
   background-image: url("images/IMG_7938.JPG");
   background-position: center top;
@@ -533,7 +466,6 @@ header {
   align-items: center;
   background-color: #000000;
   /*border-bottom: 30px solid #ffffff;*/
-  
 }
 
 .video-container > h1 {
@@ -567,7 +499,7 @@ header {
 
 /* CONTACT */
 
-.contact-container{
+.contact-container {
   background-color: #000000;
 }
 
@@ -762,8 +694,6 @@ footer {
     border-radius: 15px 0px 0px 15px;
   }
 
-
-
   .goals-container {
     position: relative;
   }
@@ -882,7 +812,6 @@ footer {
     justify-content: center;
     align-items: center;
     border-bottom: 80px solid #ffffff;
-    
   }
   .video {
     width: 100vw;
@@ -890,7 +819,6 @@ footer {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
-    
   }
 
   .video > iframe {
@@ -900,9 +828,6 @@ footer {
     bottom: 10%;
     width: 100%;
     height: 100%;
-
-
-    
   }
 
   .contact-container {
