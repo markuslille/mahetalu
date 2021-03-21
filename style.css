@@ -344,12 +344,12 @@ header {
   height: auto;
   position: absolute;
   right: -1%;
-  top: 15%;
+  top: 25%;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: right;
   width: 45vw;
 }
 
